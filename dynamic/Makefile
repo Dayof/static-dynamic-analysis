@@ -29,7 +29,7 @@ all : clean build exec
 
 build:
 	$(CC) $(CFLAGS) -fpic -c src/testlib.c -o lib/testlib.o $(GCOV)
-	$(CC) -shared lib/testlib.o -o lib/libtestlib.so -lgcov
+	$(CC) -shared lib/testlib.o -o lib/libtestlib.so $(GCOV)
 	$(CC) $(CFLAGS) src/test.c -o bin/test -Llib -ltestlib $(GCOV)
 
 exec:
