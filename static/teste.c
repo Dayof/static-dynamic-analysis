@@ -1,5 +1,5 @@
-void test()
+void exemplo_lib()
 {
- char *p = malloc(100);
- dostuff(p);
+ char *ptr = malloc(4);
+ funct(ptr);
 }
