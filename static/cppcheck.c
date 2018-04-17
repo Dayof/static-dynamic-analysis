@@ -61,6 +61,12 @@ void not_a_multiple(){
     te = (float*)malloc(sizeof(*po));
 
 }
+void redundant(){
+    int redundant = 1;
+    i -= 0;
+    i = i + 0;
+    
+}
 
 int main(){
     
